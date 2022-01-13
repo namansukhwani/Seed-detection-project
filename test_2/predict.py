@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 
 model = load_model('multiclass_model80_77.h5')
-# model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 
 def predict(path:str):
